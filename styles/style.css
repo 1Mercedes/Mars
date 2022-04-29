@@ -14,12 +14,73 @@
   --secondary-link-color: #FFFFFF;
 }
 
-body{
+body {
   background: var(--secondary-title-color-alt);
   font-family: var(--primary-font-face);
   color: var(--primary-text-color);
 }
 
-.logo::before{
+.logo::before {
   content: url(../images/logo-light.png);
+}
+
+.header {
+  position: relative;
+}
+
+.header__link {
+  color: var(--primary-link-color);
+  margin: 15px;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  transition: 0.5s color;
+}
+
+.header__link:hover{
+  color: var(--secondary-text-color);
+}
+
+.header__button{
+  height: 40px;
+  width: 190px;
+  background: var(--secondary-background);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-link-color);
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-left: 15px;
+  margin-right: 60px;
+  transition: 0.5s color , 0.5s background;
+  box-shadow: 0px 0px 5px 1px rgb(113, 119, 241, 0.5);
+}
+
+.header__button:hover{
+  color: var(--primary-link-color);
+  background: var(--secondary-title-color-alt);
+}
+
+.header__tel{
+  font-size: 25px;
+  color: var(--primary-link-color);
+  transition: 0.5s color , 0.5s text-shadow;
+}
+
+.header__tel:hover{
+  color: var(--primary-background);
+  text-shadow: 0 0 15px;
+}
+
+.header__toggler{
+  font-size: 35px;
+  color: var(--secondary-text-color);
+}
+
+.header__toggler:focus{
+  box-shadow: none;
 }

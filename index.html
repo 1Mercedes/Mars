@@ -9,28 +9,30 @@
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link rel="stylesheet" href="libs/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar container d-flex justify-content-end navbar-expand-lg">
+    <header class="header">
+        <nav class="navbar container justify-content-between navbar-expand-lg">
             <a href="#!" class="logo"></a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            <button class="navbar-toggler header__toggler" data-bs-toggle="collapse" data-bs-target="#nav"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-align-justify"></i>
             </button>
-            <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">to order</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fal fa-phone-square-alt"></i></a></li>
+            <div class="collapse justify-content-end navbar-collapse" id="nav">
+                <ul class="navbar-nav align-items-end align-items-lg-center">
+                    <li><a class="header__link" aria-current="page" href="#">About Me</a></li>
+                    <li><a class="header__link" href="#">Works</a></li>
+                    <li><a class="header__button" href="#">to order</a></li>
+                    <li><a class="header__tel" href="#"><i class="fal fa-phone-square-alt"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main></main>
     <footer></footer>
+    <script src="libs/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
